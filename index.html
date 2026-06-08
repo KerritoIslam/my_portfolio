@@ -442,7 +442,28 @@
     transform: translateY(-4px);
     box-shadow: 0 16px 48px rgba(0,0,0,0.5), 0 0 0 1px rgba(91,94,244,0.2);
   }
-  .project-num {
+  .play-btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    margin-top: 1.25rem;
+    padding: 0.6rem 1.25rem;
+    background: rgba(56,189,248,0.07);
+    border: 1px solid rgba(56,189,248,0.35);
+    border-radius: 8px;
+    color: var(--accent3);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: none;
+  }
+  .play-btn:hover {
+    background: rgba(56,189,248,0.15);
+    border-color: var(--accent3);
+    box-shadow: 0 0 20px rgba(56,189,248,0.2);
+    transform: translateY(-2px);
+  }
+
     font-size: 0.68rem;
     color: var(--text3);
     letter-spacing: 0.12em;
@@ -961,6 +982,10 @@
         <span class="project-tag">BLoC</span>
         <span class="project-tag">REST API</span>
       </div>
+      <a href="https://play.google.com/store/apps/details?id=com.islam.ammerli&pcampaignid=web_share" target="_blank" class="play-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.24.99.2L16.77 12.08l-2.7-2.7L3.18 23.76zm16.7-13.1L16.9 8.77l-3.02 2.85 3.02 2.85 3.02-1.82c.86-.52.86-1.72-.04-2.24zM3.05.28C2.72.54 2.5.96 2.5 1.5v21c0 .54.22.96.55 1.22l.1.08 11.77-11.77v-.28L3.15.2l-.1.08zm9.13 9.54L3.05.28l-.1.08v.06l9.13 9.4z"/></svg>
+        View on Google Play
+      </a>
     </div>
 
     <!-- GrowPath -->
